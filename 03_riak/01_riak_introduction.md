@@ -1,4 +1,4 @@
-!SLIDE center
+!SLIDE center riak
 
 ![Riak](riak.png)
 
@@ -44,6 +44,7 @@
 
 * Add/Remove Nodes
 * Conflict Resolution
+
 !SLIDE center
 
 # Replication #
@@ -57,5 +58,3 @@
 * N Replicas Stored
 * Quorum
 * Quorum Tuneable On Read/Write
-
-

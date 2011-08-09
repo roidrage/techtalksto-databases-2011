@@ -1,4 +1,4 @@
-!SLIDE center
+!SLIDE center redis
 
 <a href="http://redis.io"><img src="redis.png"></a>
 
