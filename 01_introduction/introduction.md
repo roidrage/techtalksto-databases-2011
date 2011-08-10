@@ -16,9 +16,11 @@
 
 # Disclaimer
 
-!SLIDE
+!SLIDE bullets incremental
 
 # What's Wrong With MySQL?
+
+* Or PostgreSQL?
 
 !SLIDE
 
@@ -39,7 +41,7 @@
 
 ![](which_option_to_choose.png)
 
-### I was elected to lead, not to read.
+### "I was elected to lead, not to read."
 
 !SLIDE center zoom-800
 
