@@ -32,6 +32,27 @@
 
 !SLIDE
 
+## Scalability
+
+!SLIDE
+
+### Scalability is not a problem until it's a problem.
+
+!SLIDE
+
+## Operations
+
+!SLIDE
+
+## Developer Productivity
+
+!SLIDE bullets incremental
+
+### You can get all that with MySQL.
+* It just takes a long time to master
+
+!SLIDE
+
 ### People don't choose
 ### a database based on facts,
 ### but because they like one
@@ -47,9 +68,7 @@
 
 ![Five Unthinkable Options](five_options.jpg)
 
-!SLIDE
-
-## Five "Unthinkable" Options
+### Five "Unthinkable" Options
 
 !SLIDE five-options center
 
@@ -58,4 +77,5 @@
 <br/>
 <img src="riak.png" data-linkto="riak" class="database-link"/>
 <img src="redis.png" data-linkto="redis" class="database-link"/>
-
+<br/>
+<img src="cassandra.png" data-linkto="cassandra" class="database-link">

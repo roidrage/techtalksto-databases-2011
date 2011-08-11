@@ -4,13 +4,24 @@ setTimeout(function() {
   $('img.database-link').click(function(event) {
     event.preventDefault();
     var target = $(this).attr("data-linkto");
-    for (var i = 0; i < slides.length; i++) {
-      if ($(slides[i]).children().first().hasClass(target)) {
-        gotoSlide(i);
-      }
-    }
+    gotoSlideWithTarget(target);
+
   });
+  document.onkeyup = maybeReturnToDatabaseMenu;
 }, 2000);
 
+function gotoSlideWithTarget(target) {
+  for (var i = 0; i < slides.length; i++) {
+    if ($(slides[i]).children().first().hasClass(target)) {
+      gotoSlide(i);
+    }
+  }
+}
 
-
+function maybeReturnToDatabaseMenu(event) {
+  if (event.keyCode == 69) {
+    gotoSlideWithTarget("five-options");
+  } else {
+    keyUp(event);
+  }
+}
