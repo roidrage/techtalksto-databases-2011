@@ -1,4 +1,4 @@
-!SLIDE center
+!SLIDE center cassandra
 
 ![Cassandra](cassandra.png)
 
@@ -9,10 +9,6 @@
 * Write Availability
 * Write Performance
 * Very Efficient Data/Range Access
-
-!SLIDE
-
-* Wide Column Model
 * Inspired by [Google BigTable](http://labs.google.com/papers/bigtable.html) and [Amazon's Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html)
 
 !SLIDE bullets incremental
@@ -24,7 +20,7 @@
 
 !SLIDE bullets incremental
 
-# Datenmodell #
+# Data Model #
 
 * Column
 * Column Family
@@ -110,36 +106,7 @@
 
 !SLIDE bullets incremental
 
-# Data Structure #
-
-* CommitLog
-* MemTable
-* SSTable
-
-!SLIDE bullets incremental
-
-# CommitLog #
-
-* Append-Only
-* Sequential Disk I/O
-
-!SLIDE bullets incremental
-
-# MemTable #
-
-* In-Memory Hashtable
-* "Cache"
-
-!SLIDE bullets incremental
-
-# SSTable #
-
-* Sorted String Table
-* Indexed For Efficiency
-
-!SLIDE numbered incremental
-
-# Writes #
+# Anatomy Of A Write #
 
 1. CommitLog
 2. MemTable

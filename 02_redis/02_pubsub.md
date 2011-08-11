@@ -39,7 +39,7 @@
 ## WebSocket Server ##
 
     @@@ coffeescript
-    ws = require("websocket-server")
+    ws = require "websocket-server"
 
     server = ws.createServer()
 
@@ -47,7 +47,7 @@
       connection.addListener "message", (msg) ->
         connection.send msg
 
-    server.listen(8080)
+    server.listen 8080
 
 !SLIDE smaller
 
@@ -55,7 +55,7 @@
 
     @@@ coffeescript
     redis = require("redis").createClient()
-    redis.subscribe("notifications")
+    redis.subscribe "notifications"
     redis.on "message", (channel, message) ->
       connection.send message
 
@@ -64,7 +64,7 @@
 ## Subscribe To Patterns
 
     @@@ coffeescript
-    redis.psubscribe("notifications.*")
+    redis.psubscribe "notifications.*"
 
 !SLIDE smaller
 
@@ -90,8 +90,8 @@
 ## Your App
 
     @@@ coffeescript
-    redis.publish("notifications.new-users",
-                  "#{user.name} signed up")
+    redis.publish "notifications.new-users",
+                  "#{user.name} signed up"
 
 !SLIDE
 

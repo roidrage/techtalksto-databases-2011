@@ -39,12 +39,19 @@
     @@@ javascript
     db.conferences.save(techtalksto)
 
-!SLIDE
+!SLIDE smaller
 
 # Finding Data #
 
     @@@ javascript
     db.conferences.find({tags: 'nosql'})
+
+!SLIDE smaller
+
+# Finding Data
+
+    @@@ javascript
+    db.conferences.find({tags: 'nosql', location: 'Toronto'})
 
 !SLIDE
 
@@ -54,6 +61,16 @@
     db.conferences.update(
       {tags: 'nosql'},
       {$inc: {attendees: 110}}
+    )
+
+!SLIDE
+
+# Atomic Updates #
+
+    @@@ javascript
+    db.conferences.update(
+      {tags: 'nosql'},
+      {$push: {tags: ''}}
     )
 
 !SLIDE bullets incremental
@@ -98,6 +115,13 @@
 
 * Data Partitioning
 * Hot Data In Memory
+
+!SLIDE bullets incremental
+
+# Fun Facts
+
+* Storage: mmap
+* Everything Happens In Memory
 
 !SLIDE bullets
 

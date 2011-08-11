@@ -88,7 +88,6 @@
 
 !SLIDE bullets incremental
 
-# Concurrent Updates
+# Concurrent Updates #
 
-* Siblings
-* Vector Clocks
+* Creates Siblings

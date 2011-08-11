@@ -51,19 +51,20 @@
       args: ["meyer@paperplanes.de"]
     }
 
-!SLIDE small
+!SLIDE smaller
 
 ## Jobs
 
     @@@ ruby
     redis.lpush("queue:confirmation_emails", JSON.dump(job))
 
-!SLIDE smaller
+!SLIDE smallish
 
 ## Under the hood
 
     LPUSH queue:confirmation_emails,
-    {"id":1, "class":"ConfirmationEmailWorker", "args":["meyer@paperplanes.de"]}
+          {"id":1, "class":"ConfirmationEmailWorker",
+          "args":["meyer@paperplanes.de"]}
 
 !SLIDE small
 
@@ -93,7 +94,7 @@
 ## Mark Job as In-Progress
 
     @@@ ruby
-    @redis.rpush("jobs-in-progress", job)
+    redis.rpush("jobs-in-progress", job)
 
 !SLIDE bullets incremental
 
