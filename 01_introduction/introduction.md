@@ -36,10 +36,6 @@
 
 !SLIDE
 
-### Scalability is not a problem until it's a problem.
-
-!SLIDE
-
 ## Operations
 
 !SLIDE
