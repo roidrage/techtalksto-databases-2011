@@ -19,8 +19,10 @@ function gotoSlideWithTarget(target) {
 }
 
 function maybeReturnToDatabaseMenu(event) {
-  if (event.keyCode == 69) {
+  if (event.keyCode == 72) {
     gotoSlideWithTarget("five-options");
+  } else if (event.keyCode == 69) {
+    gotoSlideWithTarget("the-end")
   } else {
     keyUp(event);
   }

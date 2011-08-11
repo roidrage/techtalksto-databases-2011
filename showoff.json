@@ -6,5 +6,6 @@
     {"section":"03_riak"},
     {"section":"04_mongodb"},
     {"section":"05_couchdb"},
-    {"section":"06_cassandra"}
+    {"section":"06_cassandra"},
+    {"section":"07_outro"}
   ]}
