@@ -12,7 +12,7 @@
 * "Schema-less"
 * Rich Query-Language
 
-!SLIDE small
+!SLIDE smaller
 
 # BSON
 
@@ -32,7 +32,7 @@
 * ~= Tables
 * Documents Of Similar Structure
 
-!SLIDE
+!SLIDE smaller
 
 # Saving Data #
 
@@ -53,7 +53,7 @@
     @@@ javascript
     db.conferences.find({tags: 'nosql', location: 'Toronto'})
 
-!SLIDE
+!SLIDE smaller
 
 # Atomic Updates #
 
@@ -63,14 +63,14 @@
       {$inc: {attendees: 110}}
     )
 
-!SLIDE
+!SLIDE smaller
 
 # Atomic Updates #
 
     @@@ javascript
     db.conferences.update(
       {tags: 'nosql'},
-      {$push: {tags: ''}}
+      {$push: {tags: 'performance'}}
     )
 
 !SLIDE bullets incremental
@@ -131,3 +131,7 @@
 * Short-Term Event Logging
 * Queryable Cache
 * Archive Unstructured Data
+
+!SLIDE
+
+# `</mongodb>`

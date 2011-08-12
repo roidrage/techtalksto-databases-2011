@@ -4,7 +4,7 @@
 
 !SLIDE bullets incremental
 
-# Requiments #
+# Requirements #
 
 * Fast Writes
 * Efficient Range Access
@@ -14,13 +14,12 @@
 # Data Model
 
 * Feed Per User
-* 
 * Ordered By Time
 * Access By Time
 
 !SLIDE bullets incremental
 
-# Datenmodell #
+# Data Model #
 
     @@@ ruby
     Events["mathias"] = {
@@ -41,3 +40,7 @@
 * 1400 Writes/Second
 * 6-12 Servers
 * Problem: Garbage Collection
+
+!SLIDE
+
+# `</cassandra>`

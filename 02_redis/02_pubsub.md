@@ -135,3 +135,7 @@ $(".websockets-demo").bind("showoff:show", function (event) {
 * Soft Real Time Updates
 * Monitoring Dashboards
 * Activity Feeds
+
+!SLIDE
+
+# `</redis>`

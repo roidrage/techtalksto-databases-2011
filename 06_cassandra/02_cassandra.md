@@ -67,13 +67,8 @@
 
     @@@ ruby
     Users["mathias"] =
-      {"email" => "meyer@paperplanes.de"}
-
-!SLIDE center
-
-# Column Family #
-
-![Column Family](columns.png)
+      {"email" => "meyer@paperplanes.de",
+       "username" => "roidrage"}
 
 !SLIDE small
 
@@ -86,12 +81,6 @@
         "country": "Germany"
       }
     }
-
-!SLIDE bullets incremental
-
-# Data Model #
-
-* Confusing...
 
 !SLIDE bullets incremental
 
@@ -108,11 +97,11 @@
 
 # Anatomy Of A Write #
 
-1. CommitLog
-2. MemTable
-3. SSTable
+* CommitLog
+* MemTable
+* SSTable
 
-!SLIDE
+!SLIDE bullets incremental
 
 # Bottom Line
 

@@ -157,3 +157,7 @@
 !SLIDE center
 
 ![Swinger](swinger.png)
+
+!SLIDE
+
+# `</couchdb>`

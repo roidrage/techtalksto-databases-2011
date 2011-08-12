@@ -42,11 +42,6 @@
 
 ## Developer Productivity
 
-!SLIDE bullets incremental
-
-### You can get all that with MySQL.
-* It just takes a long time to master
-
 !SLIDE
 
 ### People don't choose

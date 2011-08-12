@@ -40,8 +40,6 @@
 
 !SLIDE center
 
-# Availability
-
 ![Riak Animated](riak_animated.gif)
 
 !SLIDE bullets incremental
