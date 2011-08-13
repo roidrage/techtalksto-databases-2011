@@ -92,6 +92,6 @@
 
 * Creates Siblings
 
-!SLIDE
+!SLIDE end-database
 
 # `</riak>`

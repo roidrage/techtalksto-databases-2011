@@ -160,6 +160,6 @@
 
 ![Swinger](swinger.png)
 
-!SLIDE
+!SLIDE end-database
 
 # `</couchdb>`

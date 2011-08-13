@@ -7,6 +7,16 @@ setTimeout(function() {
     gotoSlideWithTarget(target);
 
   });
+
+  $('div.end-database h1 code').wrap(function() {
+    return '<a href="#" class="link-to-five-options"/>' 
+  });
+
+  $('a.link-to-five-options').click(function(event) {
+    event.preventDefault();
+    gotoSlideWithTarget('five-options');
+  });
+
   document.onkeyup = maybeReturnToDatabaseMenu;
 }, 2000);
 

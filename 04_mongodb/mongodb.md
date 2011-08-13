@@ -132,6 +132,6 @@
 * Queryable Cache
 * Archive Unstructured Data
 
-!SLIDE
+!SLIDE end-database
 
 # `</mongodb>`

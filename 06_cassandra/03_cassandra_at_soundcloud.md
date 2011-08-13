@@ -41,6 +41,6 @@
 * 6-12 Servers
 * Problem: Garbage Collection
 
-!SLIDE
+!SLIDE end-database
 
 # `</cassandra>`

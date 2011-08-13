@@ -139,6 +139,6 @@ $('.websockets-demo').bind("showoff:next", function(event) {
 * Monitoring Dashboards
 * Activity Feeds
 
-!SLIDE
+!SLIDE end-database
 
 # `</redis>`
