@@ -2,10 +2,6 @@
 
 # Publish/Subscribe
 
-!SLIDE
-
-## Redis Pub/Sub ##
-
 !SLIDE small
 
 ## Sub ##
@@ -28,7 +24,7 @@
 
 ## Publish ##
 
-    PUBLISH notifications.new-user "Mathias signed up"
+    PUBLISH notifications.new-users "Mathias signed up"
 
 !SLIDE
 
@@ -55,6 +51,7 @@
 
     @@@ coffeescript
     redis = require("redis").createClient()
+
     redis.subscribe "notifications"
     redis.on "message", (channel, message) ->
       connection.send message
@@ -66,11 +63,6 @@
     @@@ coffeescript
     redis.psubscribe "notifications.*"
 
-!SLIDE smaller
-
-## Consumer
-
-    @@@ coffeescript
     redis.on "pmessage", (pattern, channel, message) ->
       connection.send message
 
@@ -80,8 +72,11 @@
 
     @@@ javascript
     websocket = new WebSocket("ws://localhost:8081");
-    websocket.onmessage = function(evt) { onMessage(evt); };
-    setTimeout(function() {i
+    websocket.onmessage = function(evt) {
+      onMessage(evt);
+    };
+
+    setTimeout(function() {
       websocket.send("new-users");
     }, 1000);
 
@@ -125,6 +120,14 @@ $(".websockets-demo").bind("showoff:show", function (event) {
     };
     setTimeout(function() {websocket.send("new-users");}, 1000);
   });
+});
+
+$('.websockets-demo').bind("showoff:next", function(event) {
+  console.log(websocket)
+  if (websocket !== undefined || websocket !== null) {
+    websocket.close();
+    websocket = null;
+  }
 });
 </script>
 

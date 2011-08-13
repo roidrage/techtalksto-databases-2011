@@ -23,6 +23,8 @@ function maybeReturnToDatabaseMenu(event) {
     gotoSlideWithTarget("five-options");
   } else if (event.keyCode == 69) {
     gotoSlideWithTarget("the-end")
+  } else if (event.keyCode == 66) {
+    gotoSlideWithTarget("five-options")
   } else {
     keyUp(event);
   }

@@ -50,13 +50,15 @@
     $ curl localhost:5984/conferences/0a34bfe
     {...}
 
-!SLIDE center
+!SLIDE center zoom-1000
 
 # How do I query my data?
 
 ![MapReduce](mapreduce.png)
 
 !SLIDE
+
+# MapReduce
 
     @@@ javascript
     function(doc) {
@@ -80,7 +82,7 @@
       }
     }
 
-!SLIDE smallest
+!SLIDE smallish
 
 # Query Views
 

@@ -9,7 +9,7 @@
 * Write Availability
 * Write Performance
 * Very Efficient Data/Range Access
-* Inspired by [Google BigTable](http://labs.google.com/papers/bigtable.html) and [Amazon's Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html)
+* [Google BigTable](http://labs.google.com/papers/bigtable.html) + [Amazon Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html)
 
 !SLIDE bullets incremental
 
@@ -47,13 +47,6 @@
 
 * Columns of Columns
 
-!SLIDE bullets incremental
-
-# Indexes
-
-* Keys
-* (Super) Columns
-
 !SLIDE small
 
 # Column #
@@ -88,6 +81,13 @@
 
 * "Atomic" Inserts
 * Efficient Range Queries
+
+!SLIDE bullets incremental
+
+# Indexes
+
+* Keys
+* (Super) Columns
 
 !SLIDE
 

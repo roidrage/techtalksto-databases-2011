@@ -38,6 +38,12 @@
 
 ## Protocol
 
+    GET key
+
+!SLIDE small
+
+## Protocol
+
     RPUSH list item
 
 !SLIDE small

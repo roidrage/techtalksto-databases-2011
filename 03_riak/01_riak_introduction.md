@@ -35,19 +35,7 @@
 
 # Availability #
 
-* No Special Node
-* Read Repairs
-
-!SLIDE center
-
-![Riak Animated](riak_animated.gif)
-
-!SLIDE bullets incremental
-
-# Scalability #
-
-* Add/Remove Nodes
-* Conflict Resolution
+* No Special Nodes
 
 !SLIDE center
 
@@ -60,5 +48,18 @@
 # Replication
 
 * N Replicas Stored
-* Quorum
 * Quorum Tuneable On Read/Write
+!SLIDE bullets incremental
+
+!SLIDE center
+
+![Riak Animated](riak_animated.gif)
+
+!SLIDE bullets incremental
+
+# Scalability #
+
+* Add/Remove Nodes
+* Conflict Resolution
+
+
